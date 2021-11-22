@@ -3,216 +3,59 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta name="description" content="Takashi Obi Laboratory, Tokyo Institute of Technology">
-	<meta name="author" content="Elena">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="l.ico" type="image/x-icon" />
+	<meta name="description" content="Takashi Obi Laboratory, Tokyo Institute of Technology">
+	<meta name="author" content="foxelas">
 	<title>Takashi Obi Lab</title>
 
 	<style>
 		@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i|Raleway:300,300i,600,600i';
 
-		html,
 		body {
 			width: 100%;
 			height: 100%;
+			background-color: #4087af;
 		}
 
-		body {
-			overflow: hidden;
-			text-rendering: optimizeLegibility;
-		}
-
-		::selection {
-			background: #3C3C3C;
-			/* WebKit/Blink Browsers */
-		}
-
-		::-moz-selection {
-			background: #3C3C3C;
-			/* Gecko Browsers */
-		}
-
-		.delayedAppearance {
-			-moz-animation-name: pageLoad;
-			-moz-animation-iteration-count: 1;
-			-moz-animation-timing-function: ease-out;
-			-moz-animation-duration: 0.8s;
-			-moz-animation-delay: 0s;
-
-			-webkit-animation-name: pageLoad;
-			-webkit-animation-iteration-count: 1;
-			-webkit-animation-timing-function: ease-out;
-			-webkit-animation-duration: 0.8s;
-			-webkit-animation-delay: 0s;
-
-			animation-name: pageLoad;
-			animation-iteration-count: 1;
-			animation-timing-function: ease-out;
-			animation-duration: 0.8s;
-			animation-delay: 0s;
-		}
-
-		section {
-			height: 100%;
-			display: inline-block;
-			position: absolute;
-		}
-
-		footer {
-			left: 2%;
-			bottom: 2%;
-			width: 100%;
-			position: absolute;
-			text-align: left;
-
-			font-family: 'Cormorant Garamond', serif;
-			font-size: 12px;
-			font-weight: 100 !important;
-			color: #FFF3F1;
-			letter-spacing: 0.5px;
-			line-height: 26px;
-		}
-
-		#buttonContainer {
-			/*position: absolute;*/
-			margin-left: 80%;
-			margin-top: 10%;
-			width: 10%;
-
-			flex-flow: column;
-			display: flex;
-			justify-content: center;
-		}
-
-		a {}
-
-		button {
-			height: 60px;
-			width: 100px;
-			border: none;
-			background: none;
-			cursor: pointer;
-		}
-
-		#infoContainer {
-			background-image: linear-gradient(-34deg, #4087af 7%, #4087af 47%, #4087af 100%);
-			border-radius: 0px;
-			width: 70%;
-			height: 100vh;
-		}
-
-		#address {
-			margin-top: 10%;
-			margin-left: 10%;
-		}
-
-		#addressContainer {
-			margin-top: 10%;
-			margin-left: 10%;
-			display: inline-block;
-			border: 10px white solid;
-		}
-
-		#newsContainer {
-			margin-top: 10%;
-			margin-left: 10%;
-			width: 50%;
-			position: absolute;
-		}
-
-		#news {}
-
-		h1 {
-			font-family: 'Raleway', sans-serif;
-			font-size: 50px;
-			font-weight: 600 !important;
-			color: #FFFFFF;
-			letter-spacing: 1.9px;
-			margin-top: -20px;
-		}
-
-		h2 {
-			font-family: 'Raleway', sans-serif;
-			font-size: 24px;
-			font-weight: 300 !important;
-			color: #FFFFFF;
-			letter-spacing: -0.02px;
-		}
-
-		h3 {
-			font-family: 'Cormorant Garamond', serif;
-			font-style: italic;
-			font-size: 18px;
-			font-weight: 100 !important;
-			color: #FFF3F1;
-			letter-spacing: 0.5px;
-			line-height: 26px;
-			text-align: justify;
-			text-justify: inter-word;
-		}
-
-		hr {
-			background-color: white;
-			display: block;
-			margin: -25px 00px 50px;
-			height: 3px;
-			width: 160px;
-			border: none;
-		}
 	</style>
 </head>
 
-<body style="width:100%; height:100%; margin:0;">
+<body>
 
-	<section id="infoContainer">
-		<div id="addressContainer">
-			<div id="address">
-				<h1>Takashi Obi Laboratory </h1>
-				<hr>
-				<h2>Tokyo Institute of Technology <br>
-					Suzukakedai Campus</h2>
-			</div>
-		</div>
+	<div id="greeting-card">
+		<h1>Takashi Obi Laboratory </h1>
+		<hr>
+		<h2>Tokyo Institute of Technology <br>
+			Suzukakedai Campus</h2>
+	</div>
 
-		<div id="newsContainer">
-			<div id="news">
-				<h1>Latest News</h1>
-				<hr>
-				<h2>
-					News1 <br>
-					News 2
-				</h2>
-			</div>
-		</div>
+	<div id="news-list">
+		<h1>Latest News</h1>
+		<hr>
+		<h2>
+			News1 <br>
+			News 2
+		</h2>
 
-		<div id="buttonContainer">
-			<a href="#" rel="noopener"><button> About </button></a>
-			<a href="#" rel="noopener"><button> Research Topics </button></a>
-			<a href="#" rel="noopener"><button> Prospective Students </button></a>
-			<a href="#" rel="noopener"><button> Contact & Access </button></a>
-
-		</div>
-
-	</section>
+	</div>
 
 
+	<div id="menu">
+		<a href="about.html" rel="noopener"><button> About </button></a>
+		<a href="research.html" rel="noopener"><button> Research Topics </button></a>
+		<a href="students.html" rel="noopener"><button> Prospective Students </button></a>
+		<a href="contact.html" rel="noopener"><button> Contact & Access </button></a>
+	</div>
 
-
-	<footer class='bottom-menu bottom-menu-inverse'>
-		<div class='container'>
-			<div class="row" style="color:#FFFFFF">
-				<div class="col-xs-12 col-sm-4 col-md-4 footer-column">
-					<p>
-						Copyright © 2021
-						Takashi Obi Laboratory.
-						All Rights Reserved.
-					</p>
-				</div>
-			</div>
-
-		</div>
+	<div id="footer">
+		<p>
+			Copyright © 2021
+			Takashi Obi Laboratory.
+			All Rights Reserved.
+		</p>
+	</div>
 
 </body>
 
