@@ -31,12 +31,12 @@ h3 {
 .menu {
 }
 
-#news-list {
+.news-list {
 }
 
-#greeting-card {
+.greeting-card {
   border: solid;
   height: 30%;
-  width: 30%;
+  width: 50%;
   text-align: center;
 }
