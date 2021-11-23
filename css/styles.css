@@ -24,3 +24,19 @@ h2 {
 h3 {
   color: black;
 }
+
+.class {
+}
+
+.menu {
+}
+
+#news-list {
+}
+
+#greeting-card {
+  border: solid;
+  height: 30%;
+  width: 30%;
+  text-align: center;
+}
