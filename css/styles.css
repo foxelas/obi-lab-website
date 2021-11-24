@@ -35,8 +35,19 @@ h3 {
 }
 
 .greeting-card {
-  border: solid;
-  height: 30%;
-  width: 50%;
+  border: none;
+  height: 100%;
+  width: 100%;
   text-align: center;
+  /*background-image: url("../images/suzukake.jpg");*/
+}
+
+.main-img {
+  width: 50%;
+  height: 50%;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
 }
