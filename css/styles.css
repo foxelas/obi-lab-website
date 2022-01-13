@@ -32,12 +32,18 @@ h3 {
 }
 
 .news-list {
+  height: 500px;
+  width: 500px;
+}
+
+.zeroMargins {
+  margin: 0px 0px 0px 0px;
 }
 
 .greeting-card {
   border: none;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 500px;
   text-align: center;
   /*background-image: url("../images/suzukake.jpg");*/
 }
