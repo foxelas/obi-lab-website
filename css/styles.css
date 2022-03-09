@@ -25,51 +25,54 @@ h3 {
   color: black;
 }
 
-.class {
+.content {
+}
+
+.about {
+  width: 50%;
+  text-align: justify;
+  margin: 0 25% 0 25%;
+}
+
+.news {
+  margin-right: 10%;
+}
+
+.suptitle {
+  text-align: center;
+}
+
+.title {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.header {
+  width: auto;
+  height: 30px;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.identity {
+  text-align: left;
+  width: 20%;
+  margin-left: 10px;
 }
 
 .menu {
-}
-
-.news-list {
-  height: 500px;
-  width: 500px;
-}
-
-.zeroMargins {
-  margin: 0px 0px 0px 0px;
-}
-
-.greeting-card {
-  border: none;
-  height: auto;
-  width: 500px;
-  text-align: center;
-  /*background-image: url("../images/suzukake.jpg");*/
-}
-
-.flex-container {
-  display: flex;
-  width: 70%;
-  align-content: center;
-}
-
-.flex-child {
-  flex: 1;
-  width: 30%;
-}
-
-.flex-child:first-child {
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-.main-img {
-  width: 50%;
-  height: 50%;
+  text-align: right;
+  width: 80%;
+  margin-right: 10px;
 }
 
 .footer {
   text-align: center;
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.center-text {
+  text-align: center;
 }
