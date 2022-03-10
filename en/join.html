@@ -1,0 +1,46 @@
+---
+layout: default
+title: Join
+---
+
+<!-- Main -->
+<section id="main" class="wrapper style1">
+  <header class="major">
+    <h2>Join us</h2>
+    <p>Information for prospective students</p>
+  </header>
+  <div class="container">
+    <section>
+      <a href="#" class="image fit"
+        ><img src="{{ site.baseurl }}/images/banner.jpg" alt=""
+      /></a>
+      <p>
+        At Obi Laboratory, we are researching new biometric technologies
+        necessary for investigating human biological activities, especially
+        image processing technologies necessary for elucidating biological
+        functions. We are also conducting research on social information system
+        technology necessary for solving various social issues and building
+        social infrastructure that allows users to safely use medical
+        information.
+      </p>
+      <p>
+        Obi Laboratory belongs to the Institute of Innovative Research of our
+        university. We accept undergraduate and graduate students of the School
+        of Engineering's Information and Communications Engineering department
+        to conduct education and research. In addition, since we are conducting
+        research in collaboration with faculty members belonging to the Advanced
+        Research Center for Social Information Science And Technology, you can
+        select a research theme from a wide range of themes related to the
+        medical and the social information fields.
+      </p>
+      <h3>
+        Next enrollment period: {% capture strmonth %}{{site.time | date:
+        "%m"}}{% endcapture %}{% assign month = strmonth | plus: 0 %} {% capture
+        nextyear %}{{site.time | date: "%Y" | plus: "1"}} {% endcapture %} {% if
+        month >=1 and month < 4 %} {{ site.time | date: "April %Y" }} {% elsif
+        month > 3 and month < 10 %} {{ site.time | date: "October %Y" }} {% else
+        %} {{ "April " | append: nextyear }} {% endif %}
+      </h3>
+    </section>
+  </div>
+</section>

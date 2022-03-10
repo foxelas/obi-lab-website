@@ -121,4 +121,18 @@
 		
 	});
 
+	
+
 })(jQuery);
+
+function initMap() {
+  const r2bldg = { lat: 35.514961192076726, lng: 139.48358836441804 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: r2bldg,
+  });
+  const marker = new google.maps.Marker({
+    position: r2bldg,
+    map: map,
+  });
+}

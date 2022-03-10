@@ -83,6 +83,9 @@ h3 {
   font-size: 1.25em;
   line-height: 1.5em;
 }
+h3.emphasis {
+  background-color: #66ccff;
+}
 
 h4 {
   font-size: 1em;
@@ -499,6 +502,13 @@ input[type="radio"] + label:before {
   top: 0.25em;
 }
 
+.image.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .image.fit {
   display: block;
   margin: 0 0 2em 0;
@@ -661,6 +671,13 @@ table tbody tr:nth-child(2n + 1) {
 
 table td {
   padding: 0.75em 0.75em;
+}
+
+table tbody tr.plain {
+  background-color: transparent;
+}
+table tbody tr:nth-child(2n + 1).plain {
+  background-color: transparent;
 }
 
 table th {
@@ -1126,4 +1143,13 @@ input[type="button"]:disabled,
 
 #footer .icons a {
   color: #bbb;
+}
+
+/* Map */
+#map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 50%;
 }
