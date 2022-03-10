@@ -2,14 +2,13 @@
 layout: default
 title: Access
 permalink: /access
-lang: en
+lang: ja
 ---
 
 <!-- Main -->
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Access</h2>
-    <p>Where to find us</p>
+    <h2>アクセス</h2>
   </header>
   <div class="container">
     <a href="#" class="image fit"
@@ -18,34 +17,35 @@ lang: en
     <section>
       <div class="row double">
         <div class="6u">
-          <h2>Affiliation</h2>
+          <h2>所属</h2>
           <p>
             {{ site.university[site.active_lang] }} <br />
             {{ site.iir[site.active_lang] }} <br />
+            {% if site.active_lang == "ja" %} {{ site.fir[site.active_lang] |
+            append: "兼" | append: site.assist[site.active_lang] }} {% else %}
             {{site.fir[site.active_lang] | append: ", " | append:
-            site.assist[site.active_lang]}} <br />
+            site.assist[site.active_lang] }} {% endif %}<br />
             {{ site.labname[site.active_lang] }}
           </p>
         </div>
         <div class="6u">
-          <h2>Address</h2>
+          <h2>住所</h2>
           <p>
-            {{ site.address }} <br />
-            {{ site.mainroom }}<br />
-            {{ site.otherroom }}<br />
+            {{ site.address[site.active_lang] }} <br />
+            {{ site.mainroom[site.active_lang] }}<br />
+            {{ site.otherroom[site.active_lang] }}<br />
           </p>
 
-          <h3>Contact</h3>
+          <h3>連絡先</h3>
           <p>Email at <a href="mailto:{{site.email}}">{{ site.email }}</a></p>
         </div>
       </div>
     </section>
     <section>
-      <h2>Directions</h2>
+      <h2>道順</h2>
       <p>
-        By train: 5 minutes on foot from Suzukakedai station at Tokyu
-        Denentoshi. R2 Bldg. is the high-rise building closest to the
-        univerisity entrance.
+        電車で:
+        東急田園都市線すずかけ台駅より徒歩5分、R2棟は、精研・像情報高層棟と表示される建物です。
       </p>
       <div>
         <iframe

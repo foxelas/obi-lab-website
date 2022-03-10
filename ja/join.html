@@ -1,0 +1,35 @@
+---
+layout: default
+title: 研究室概要
+permalink: /join
+lang: ja
+---
+
+<!-- Main -->
+<section id="main" class="wrapper style1">
+  <header class="major">
+    <h2>研究室概要</h2>
+    <p>Information for prospective students</p>
+  </header>
+  <div class="container">
+    <section>
+      <a href="#" class="image fit"
+        ><img src="{{ site.baseurl }}/images/banner.jpg" alt=""
+      /></a>
+      <p>
+        小尾研究室では、人の生体活動を調べるために必要となる新たな生体計測技術、特に生体機能解明に必要となる画像処理技術の研究を行っています。また、社会で問題となっているさまざまな課題を解決し、利用者が医療情報などをを安全に利用できる社会インフラの構築に必要となる社会情報システム技術の研究を行っています。
+      </p>
+      <p>
+        小尾研究室は、本学科学技術創成研究院に所属していますが、工学院情報通信系の学部生、大学院学生の学生を受け入れて、教育・研究を行っています。また、社会情報流通基盤研究センターに所属する教員とも連携して研究を行っていますので、医療分野や社会情報分野に関連する幅広いテーマから研究テーマを選択することができます。
+      </p>
+      <h3>
+        次の入学期間: {% capture strmonth %}{{site.time | date: "%m"}}{%
+        endcapture %}{% assign month = strmonth | plus: 0 %} {% capture nextyear
+        %}{{site.time | date: "%Y" | plus: "1"}} {% endcapture %} {% if month
+        >=1 and month < 4 %} {{ site.time | date: "%Y年4月" }} {% elsif month >
+        3 and month < 10 %} {{ site.time | date: "%Y年10月" }} {% else %} {{ ""
+        | append: nextyear | append: "年4月" }} {% endif %}
+      </h3>
+    </section>
+  </div>
+</section>

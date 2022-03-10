@@ -7,25 +7,23 @@
         <ul class="alt">
           <li>
             <a href="https://www.iir.titech.ac.jp/english/">
-              Institute of Innovative Research (IIR)
+              {{site.iir[site.active_lang] }}
             </a>
           </li>
 
           <li>
             <a href="https://www.first.iir.titech.ac.jp/english/">
-              Laboratory for Future Interdisciplinary Research of Science and
-              Technology (FIRST)
+              {{site.fir[site.active_lang] }}
             </a>
           </li>
           <li>
             <a href="http://asist.ssr.titech.ac.jp/">
-              Advanced Research Center for Social Information Science And
-              Technology (ASSIST)
+              {{site.assist[site.active_lang] }}
             </a>
           </li>
           <li>
             <a href="https://www.gsic.titech.ac.jp/">
-              Global Scientific Information and Computing Center (GSIC)
+              {{site.gsic[site.active_lang] }}
             </a>
           </li>
         </ul>
@@ -33,42 +31,45 @@
         <ul class="alt">
           <li>
             <a href="https://educ.titech.ac.jp/ict/eng/">
-              Department of Information and Communications Engineering</a
+              {{site.department[site.active_lang] }}</a
             >
           </li>
           <li>
             <a
               href="https://educ.titech.ac.jp/ict/eng/education/hcsbe_graduate/"
             >
-              Human-Centered Science and Biomedical Engineering Graduate Major
+              {{site.hcsb[site.active_lang]}}
             </a>
           </li>
           <li>
             <a href="https://educ.titech.ac.jp/ict/eng/education/ict_graduate/">
-              Information and Communications Engineering Graduate Major</a
+              {{site.ict[site.active_lang] }}</a
             >
           </li>
           <li>
             <a
               href="https://educ.titech.ac.jp/ict/eng/education/ict_undergraduate/"
             >
-              Information and Communications Engineering Undergraduate Major</a
-            >
+              {{site.ictund[site.active_lang] }}
+            </a>
           </li>
         </ul>
       </div>
       <div class="6u">
-        <h3><a href="{{ site.baseurl }}/en/access.html"> Access </a></h3>
+        <h3><a href="{{ site.baseurl }}/access.html"> Access </a></h3>
         <p>
-          {{ site.university}} <br />
-          {{ site.affil1}} <br />
-          {{ site.affil2}} <br />
-          {{ site.labname }}
+          {{ site.university[site.active_lang] }} <br />
+          {{ site.iir[site.active_lang] }} <br />
+          {% if site.active_lang == "ja" %} {{ site.fir[site.active_lang] |
+          append: "兼" | append: site.assist[site.active_lang] }} {% else %}
+          {{site.fir[site.active_lang] | append: ", " | append:
+          site.assist[site.active_lang] }} {% endif %}<br />
+          {{ site.labname[site.active_lang] }}
         </p>
         <p>
-          {{ site.address }} <br />
-          {{ site.mainroom }}<br />
-          {{ site.otherroom }}<br />
+          {{ site.address[site.active_lang] }} <br />
+          {{ site.mainroom[site.active_lang] }}<br />
+          {{ site.otherroom[site.active_lang] }}<br />
         </p>
 
         <h3>Contact</h3>

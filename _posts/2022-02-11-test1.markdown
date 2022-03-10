@@ -3,6 +3,7 @@ layout: post
 title: "Test1"
 date: 2022-02-11
 categories: general
+lang: en
 ---
 
 This website is new! Have full looking around!
