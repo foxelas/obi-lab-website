@@ -3,8 +3,8 @@ title: Obi Laboratory
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Obi laboratory at Tokyo Institute of Technology. Research in medical images and security of social infrastructure.
-baseurl: "/obi-lab-website" # the subpath of your site, e.g. /blog/
-url: "https://foxelas.github.io/obi-lab-website/" # the base hostname & protocol for your site
+baseurl: "/obi-lab-website"
+url: "https://foxelas.github.io/obi-lab-website/"
 
 # Build settings
 markdown: kramdown

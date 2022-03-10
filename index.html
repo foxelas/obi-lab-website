@@ -55,47 +55,26 @@ layout: landing-page
 <!-- Two -->
 <section id="two" class="wrapper style2">
   <header class="major">
-    <h2>Commodo accumsan aliquam</h2>
-    <p>Amet nisi nunc lorem accumsan</p>
+    <h2>News</h2>
   </header>
   <div class="container">
     <div class="row">
+      {% for post in site.posts limit:2 %}
       <div class="6u">
         <section class="special">
-          <a href="#" class="image fit"
-            ><img src="images/pic01.jpg" alt=""
-          /></a>
-          <h3>Mollis adipiscing nisl</h3>
-          <p>
-            Eget mi ac magna cep lobortis faucibus accumsan enim lacinia
-            adipiscing metus urna adipiscing cep commodo id. Ac quis arcu amet.
-            Arcu nascetur lorem adipiscing non faucibus odio nullam arcu
-            lobortis. Aliquet ante feugiat. Turpis aliquet ac posuere volutpat
-            lorem arcu aliquam lorem.
-          </p>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <h3>{{ post.date | date: "%-d %B %Y" }}</h3>
+          <p>{{ post.excerpt }}</p>
           <ul class="actions">
-            <li><a href="#" class="button alt">Learn More</a></li>
+            <li>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="button alt"
+                >Read More</a
+              >
+            </li>
           </ul>
         </section>
       </div>
-      <div class="6u">
-        <section class="special">
-          <a href="#" class="image fit"
-            ><img src="images/pic02.jpg" alt=""
-          /></a>
-          <h3>Neque ornare adipiscing</h3>
-          <p>
-            Eget mi ac magna cep lobortis faucibus accumsan enim lacinia
-            adipiscing metus urna adipiscing cep commodo id. Ac quis arcu amet.
-            Arcu nascetur lorem adipiscing non faucibus odio nullam arcu
-            lobortis. Aliquet ante feugiat. Turpis aliquet ac posuere volutpat
-            lorem arcu aliquam lorem.
-          </p>
-          <ul class="actions">
-            <li><a href="#" class="button alt">Learn More</a></li>
-          </ul>
-        </section>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
