@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Website renewal!"
+date:   2022-03-10 13:12:20 +0900
+categories: general
+---
+This website is new! Have full looking around! 
+
+[link]: https://foxelas.github.io/obi-lab-website/
