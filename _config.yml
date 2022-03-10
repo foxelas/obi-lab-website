@@ -6,5 +6,14 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/obi-lab-website"
 url: "https://foxelas.github.io/obi-lab-website/"
 
+university: Tokyo Institute of Technology
+affil1: Institute of Innovative Research
+affil2: Advanced Research Center for Social Information Science And Technology
+labname: Obi Laboratory
+
+address: "R2-60, Nagatsuta-cho 4259, Midori Ward, Yokohama, Kanagawa"
+mainroom: "Main office: Bldg. R2, Room 326"
+otherroom: "Staff offices: Bldg. R2, Rooms 223, 226, 327"
+
 # Build settings
 markdown: kramdown

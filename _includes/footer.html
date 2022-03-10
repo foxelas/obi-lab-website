@@ -3,88 +3,82 @@
   <div class="container">
     <div class="row double">
       <div class="6u">
-        <div class="row collapse-at-2">
-          <div class="6u">
-            <h3>TokyoTech</h3>
-            <ul class="alt">
-              <li>
-                <a href="https://educ.titech.ac.jp/ict/eng/">
-                  Dept. of Information and Communications Engineering</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://educ.titech.ac.jp/ict/eng/education/hcsbe_graduate/"
-                >
-                  Human-Centered Science and Biomedical Engineering Graduate
-                  Major
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://educ.titech.ac.jp/ict/eng/education/ict_graduate/"
-                >
-                  Information and Communications Engineering Graduate Major</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://educ.titech.ac.jp/ict/eng/education/ict_undergraduate/"
-                >
-                  Information and Communications Engineering Undergraduate
-                  Major</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="6u">
-            <h3>Affiliations</h3>
-            <ul class="alt">
-              <li>
-                <a href="https://www.iir.titech.ac.jp/english/">
-                  Institute of Innovative Research (IIR)
-                </a>
-              </li>
+        <h3>Affiliations</h3>
+        <ul class="alt">
+          <li>
+            <a href="https://www.iir.titech.ac.jp/english/">
+              Institute of Innovative Research (IIR)
+            </a>
+          </li>
 
-              <li>
-                <a href="https://www.first.iir.titech.ac.jp/english/">
-                  Laboratory for Future Interdisciplinary Research of Science
-                  and Technology (FIRST)
-                </a>
-              </li>
-              <li>
-                <a href="http://asist.ssr.titech.ac.jp/">
-                  Advanced Research Center for Social Information Science And
-                  Technology (ASSIST)
-                </a>
-              </li>
-              <li>
-                <a href="https://www.gsic.titech.ac.jp/">
-                  Global Scientific Information and Computing Center (GSIC)
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+          <li>
+            <a href="https://www.first.iir.titech.ac.jp/english/">
+              Laboratory for Future Interdisciplinary Research of Science and
+              Technology (FIRST)
+            </a>
+          </li>
+          <li>
+            <a href="http://asist.ssr.titech.ac.jp/">
+              Advanced Research Center for Social Information Science And
+              Technology (ASSIST)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.gsic.titech.ac.jp/">
+              Global Scientific Information and Computing Center (GSIC)
+            </a>
+          </li>
+        </ul>
+        <h3>TokyoTech</h3>
+        <ul class="alt">
+          <li>
+            <a href="https://educ.titech.ac.jp/ict/eng/">
+              Department of Information and Communications Engineering</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://educ.titech.ac.jp/ict/eng/education/hcsbe_graduate/"
+            >
+              Human-Centered Science and Biomedical Engineering Graduate Major
+            </a>
+          </li>
+          <li>
+            <a href="https://educ.titech.ac.jp/ict/eng/education/ict_graduate/">
+              Information and Communications Engineering Graduate Major</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://educ.titech.ac.jp/ict/eng/education/ict_undergraduate/"
+            >
+              Information and Communications Engineering Undergraduate Major</a
+            >
+          </li>
+        </ul>
       </div>
       <div class="6u">
-        <h2>Access</h2>
+        <h3><a href="{{ site.baseurl }}/en/access.html"> Access </a></h3>
         <p>
-          Tokyo Institute of Technology<br />
-          Institute of Innovative Research <br />
-          Advanced Research Center for Social Information Science And Technology
-          <br />
-          Obi Laboratory <br />
-          <br />
-          Address: R2-60, Nagatsuta-cho 4259, Midori-ku, Yokohama city, Kanagawa
-          <br />
-          Main office: Bldg. R2, Room 326 <br />
-          Staff offices: Bldg. R2, Rooms 223, 226, 327
+          {{ site.university}} <br />
+          {{ site.affil1}} <br />
+          {{ site.affil2}} <br />
+          {{ site.labname }}
         </p>
+        <p>
+          {{ site.address }} <br />
+          {{ site.mainroom }}<br />
+          {{ site.otherroom }}<br />
+        </p>
+
+        <h3>Contact</h3>
+        <p>Email at <a href="mailto:{{site.email}}">{{ site.email }}</a></p>
       </div>
     </div>
     <ul class="copyright">
-      <li>&copy; Obi laboratory. All rights reserved.</li>
+      <li>
+        &copy; {{site.time | date: "%Y"}} Obi laboratory. All rights reserved.
+      </li>
       <li>
         Template:
         <a href="https://github.com/old-jekyll-templates/Ion-Jekyll-Theme"

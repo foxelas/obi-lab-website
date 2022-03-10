@@ -18,23 +18,22 @@ title: Access
         <div class="6u">
           <h2>Affiliation</h2>
           <p>
-            Tokyo Institute of Technology<br />
-            Institute of Innovative Research <br />
-            Advanced Research Center for Social Information Science And
-            Technology
-            <br />
-            Obi Laboratory <br />
-            <br />
+            {{ site.university}} <br />
+            {{ site.affil1}} <br />
+            {{ site.affil2}} <br />
+            {{ site.labname }}
           </p>
         </div>
         <div class="6u">
           <h2>Address</h2>
           <p>
-            R2-60, Nagatsuta-cho 4259, Midori-ku, Yokohama city, Kanagawa
-            <br />
-            Main office: Bldg. R2, Room 326 <br />
-            Staff offices: Bldg. R2, Rooms 223, 226, 327 <br />
+            {{ site.address }} <br />
+            {{ site.mainroom }}<br />
+            {{ site.otherroom }}<br />
           </p>
+
+          <h3>Contact</h3>
+          <p>Email at <a href="mailto:{{site.email}}">{{ site.email }}</a></p>
         </div>
       </div>
     </section>
@@ -45,12 +44,14 @@ title: Access
         Denentoshi. R2 Bldg. is the high-rise building closest to the
         univerisity entrance.
       </p>
-      <div id="map"></div>
-      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
-        async
-      ></script>
+      <div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3247.574264535263!2d139.483583!3d35.514804!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x761923a425f158d6!2z57K-56CU44O75YOP5oOF5aCx6auY5bGk5qOf!5e0!3m2!1sen!2sjp!4v1646919442299!5m2!1sen!2sjp"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </section>
   </div>
 </section>

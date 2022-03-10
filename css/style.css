@@ -1146,10 +1146,11 @@ input[type="button"]:disabled,
 }
 
 /* Map */
-#map {
+.map {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 400px;
   width: 50%;
+  border: 0;
 }
