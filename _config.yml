@@ -120,6 +120,9 @@ otherroom:
   ja: "学生室： R2棟 223,226,327号室"
 
 #polyglot
+plugins:
+  - jekyll-polyglot
+
 languages: ["en", "ja"]
 default_lang: "en"
 exclude_from_localization: ["javascript", "images", "css", "public"]
