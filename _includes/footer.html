@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row double">
       <div class="6u">
-        <h3>Affiliations</h3>
+        <h3>{{site.affiliationstr[site.active_lang] }}</h3>
         <ul class="alt">
           <li>
             <a href="https://www.iir.titech.ac.jp/english/">
@@ -56,7 +56,7 @@
         </ul>
       </div>
       <div class="6u">
-        <h3><a href="{{ site.baseurl }}/access.html"> Access </a></h3>
+        <h3><a href="{{ site.baseurl }}/access.html"> {{site.access[site.active_lang] }} </a></h3>
         <p>
           {{ site.university[site.active_lang] }} <br />
           {{ site.iir[site.active_lang] }} <br />
@@ -72,7 +72,7 @@
           {{ site.otherroom[site.active_lang] }}<br />
         </p>
 
-        <h3>Contact</h3>
+        <h3>{{site.contactstr[site.active_lang] }}</h3>
         <p>Email at <a href="mailto:{{site.email}}">{{ site.email }}</a></p>
       </div>
     </div>

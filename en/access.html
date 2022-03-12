@@ -2,13 +2,14 @@
 layout: default
 title: Access
 permalink: /access
+ja-name: アクセス
 lang: en
 ---
 
 <!-- Main -->
 <section id="main" class="wrapper style1">
   <header class="major">
-    <h2>Access</h2>
+    <h2>{{ site.access[site.active_lang] }}</h2>
     <p>Where to find us</p>
   </header>
   <div class="container">	  
@@ -20,7 +21,7 @@ lang: en
 	  
       <div class="row double">
         <div class="6u">
-          <h2>Affiliation</h2>
+          <h2>{{ site.affiliationstr[site.active_lang] }}</h2>
           <p>
             {{ site.university[site.active_lang] }} <br />
             {{ site.iir[site.active_lang] }} <br />
@@ -30,24 +31,22 @@ lang: en
           </p>
         </div>
         <div class="6u">
-          <h2>Address</h2>
+          <h2>{{site.addressstr[site.active_lang] }}</h2>
           <p>
             {{ site.address[site.active_lang] }} <br />
             {{ site.mainroom[site.active_lang] }}<br />
             {{ site.otherroom[site.active_lang] }}<br />
           </p>
 
-          <h3>Contact</h3>
+          <h3>{{site.contactstr[site.active_lang] }}</h3>
           <p>Email at <a href="mailto:{{site.email}}">{{ site.email }}</a></p>
         </div>
       </div>
     </section>
     <section>
-      <h2>Directions</h2>
+      <h2>{{site.directionsstr[site.active_lang] }}</h2>
       <p>
-        By train: 5 minutes on foot from Suzukakedai station at Tokyu
-        Denentoshi. R2 Bldg. is the high-rise building closest to the
-        univerisity entrance.
+        {{ site.directions[site.active_lang] }}
       </p>
       <div>
         <iframe
