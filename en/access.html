@@ -32,9 +32,9 @@ lang: en
         <div class="6u">
           <h2>Address</h2>
           <p>
-            {{ site.address }} <br />
-            {{ site.mainroom }}<br />
-            {{ site.otherroom }}<br />
+            {{ site.address[site.active_lang] }} <br />
+            {{ site.mainroom[site.active_lang] }}<br />
+            {{ site.otherroom[site.active_lang] }}<br />
           </p>
 
           <h3>Contact</h3>
