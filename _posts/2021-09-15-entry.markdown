@@ -2,7 +2,7 @@
 layout: post
 title: "For those who wish to enroll in April 2021 (2021年4月入学希望者へ）"
 date: 2021-09-15
-categories: インフォメーション, information
+categories: information
 lang: en
 ---
 

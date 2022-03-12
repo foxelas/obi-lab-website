@@ -2,7 +2,7 @@
 layout: post
 title: "シンポジウム”マイナポータルを活用して暮らしをベンリに！”に出演しました"
 date: 2020-10-23
-categories: インフォメーション, information
+categories: information
 lang: ja
 ---
 
