@@ -5,8 +5,8 @@
     <description>{&quot;en&quot;=&gt;&quot;Obi laboratory at Tokyo Institute of Technology. Research in medical images and security of social infrastructure.&quot;, &quot;ja&quot;=&gt;&quot;科学技術創成研究院 小尾高史研究室&quot;}</description>
     <link>http://localhost:4000/obi-lab-website/</link>
     <atom:link href="http://localhost:4000/obi-lab-website/ja/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 12 Mar 2022 21:31:54 +0900</pubDate>
-    <lastBuildDate>Sat, 12 Mar 2022 21:31:54 +0900</lastBuildDate>
+    <pubDate>Sun, 13 Mar 2022 02:33:00 +0900</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2022 02:33:00 +0900</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -71,6 +71,77 @@
         
         
         <category>information</category>
+        
+      </item>
+    
+      <item>
+        <title>マイナンバーカードの秘密</title>
+        <description>&lt;p&gt;デジタル手続法案（正式名称：情報通信技術の活用による行政手続等に係る関係者の利便性の向上並びに行政運営の簡素化及び効率化を図るための行政手続等における情報通信の技術の利用に関する法律等の一部を改正する法律案） が本年度の通常国会に提出されました。&lt;/p&gt;
+
+&lt;p&gt;あまり知られていませんが、この法律で改正される予定の公的個人認証法（ 公的個人認証 は、マイナンバーカードで実現されるサービスの1つです）の改正案にある「特定利用者証明」を実現する仕組みは、&lt;a href=&quot;http://t2r2.star.titech.ac.jp/cgi-bin/patentinfo.cgi?q_patent_content_number=CTT100626098&quot;&gt;我々が開発した技術&lt;/a&gt;を用いています。&lt;/p&gt;
+
+&lt;p&gt;マイナンバーカードによるオンラインでの健康保険の資格確認は、この技術がカードに入っていないと実現できなかったんですが、ご存知でしたか？&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Apr 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/obi-lab-website/research%20related/2019/04/04/mynumber.html</link>
+        <guid isPermaLink="true">http://localhost:4000/obi-lab-website/research%20related/2019/04/04/mynumber.html</guid>
+        
+        
+        <category>research related</category>
+        
+      </item>
+    
+      <item>
+        <title>第9回ASISTシンポジウムが開催されます</title>
+        <description>&lt;p&gt;2019年4月19日（金）に、本学科学技術創成研究院社会情報流通基盤研究センターが主催する第9回ASISTシンポジウムが開催されます。&lt;/p&gt;
+
+&lt;p&gt;本年度も、当研究室の研究
+（特に公的個人認証サービスに関するもの） に関連する講演を行いますので、興味のある方はご参加ください。もちろん学部生、大学院生の参加も大歓迎です。
+（事前予約がベストですが、当日参加でもおそらく大丈夫です）&lt;/p&gt;
+
+&lt;p&gt;詳細は、&lt;a href=&quot;http://asist.ssr.titech.ac.jp/?p=1892&quot;&gt;「第9回　社会情報流通基盤研究センター・シンポジウム」&lt;/a&gt;のご案内をご覧ください&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Apr 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/obi-lab-website/university%20events/2019/04/04/asist.html</link>
+        <guid isPermaLink="true">http://localhost:4000/obi-lab-website/university%20events/2019/04/04/asist.html</guid>
+        
+        
+        <category>university events</category>
+        
+      </item>
+    
+      <item>
+        <title>2019年9月入学及び2020年4月入学希望の学生へ</title>
+        <description>&lt;p&gt;受入れ可能学生数の問題で、2019年9月及び2020年4月入学については
+国費等奨学生、社会人を除く一般の研究生の受け入れは行っていません。&lt;/p&gt;
+
+&lt;p&gt;2019年9月及び2020年4月は、学部、修士課程・博士課程の学生（課程への入学を前提とした国費等奨学生を含みます）のみの受け入れを予定していますので、当研究室に入学を希望する学生は、課程での入学を検討してください。&lt;/p&gt;
+
+&lt;p&gt;また、2019年9月入学については、受け入れ学生数を制限する可能性がありますので、9月入学を希望する学生は、あらかじめ問い合わせするようお願いします。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Feb 2019 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/obi-lab-website/graduate%20school%20entrance%20examination/2019/02/01/graduation.html</link>
+        <guid isPermaLink="true">http://localhost:4000/obi-lab-website/graduate%20school%20entrance%20examination/2019/02/01/graduation.html</guid>
+        
+        
+        <category>graduate school entrance examination</category>
+        
+      </item>
+    
+      <item>
+        <title>ASISTシンポジウムが開催されます</title>
+        <description>&lt;p&gt;当研究室が所属する社会情報流通基盤研究センターのシンポジウムが開催されます。
+本年度も、昨年度に引き続き、マイキーくん（しかも今年は3頭身らしい）がやってきますので、興味のある方はご参加ください。もちろん学部生、大学院生の参加も大歓迎です。
+（当日参加でもおそらく大丈夫です）&lt;/p&gt;
+
+&lt;p&gt;詳細は、&lt;a href=&quot;http://asist.ssr.titech.ac.jp/?p=1815&quot;&gt;「第8回　社会情報流通基盤研究センター・シンポジウム」&lt;/a&gt;のご案内をご覧ください。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Apr 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/obi-lab-website/laboratory%20events/2018/04/18/asist.html</link>
+        <guid isPermaLink="true">http://localhost:4000/obi-lab-website/laboratory%20events/2018/04/18/asist.html</guid>
+        
+        
+        <category>laboratory events</category>
         
       </item>
     
