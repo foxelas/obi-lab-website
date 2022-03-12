@@ -1,25 +1,59 @@
 ---
 layout: default
 ---
-<div class="wrapper style1">
-    <article class="container">
-        <header class="major">
-            <h2 class="post-title">{{ page.title }}</h2>
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }} {% if page.categories %} • {{ page.categories }}{% endif %} {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<section id="main" class="wrapper style1">
+    <header class="major">
+		<h2 class="post-title">{{ page.title }}</h2>
+		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }} {% if page.categories %} • {{ page.category }}{% endif %} {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    </header>
+	
+    <div class="container">
+        <div class="row">
+            <div class="8u">
+				<section class="post-content">
+					{{ content }}
+				</section>
 				
-        </header>
+				<footer>
+					{% if page.previous %}
+					<a href="{{ page.previous.url | prepend: site.baseurl }}" class="float-left">&larr; Previous post</a> {% endif %}
+					{% if page.next %}
+					<a href="{{ page.next.url | prepend: site.baseurl  }}" class="float-right">Next post &rarr;</a> {% endif %}
+				</footer>
+		
+            </div>
+            <div class="4u">
+                <section>
+                    <h3>{{ site.othernews[site.active_lang] }}</h3>
+                    <ul class="alt">
+						{% for category in site.categories  %}
+	
+							{% capture category_name %}{{ category | first }}{% endcapture %}
 
-        <section class="post-content">
-            {{ content }}
-        </section>
-        
-        <footer>
-            {% if page.previous %}
-            <a href="{{ page.previous.url | prepend: site.baseurl }}" class="float-left">&larr; Previous post</a> {% endif %}
-            {% if page.next %}
-            <a href="{{ page.next.url | prepend: site.baseurl  }}" class="float-right">Next post &rarr;</a> {% endif %}
-        </footer>
+							
+							<li>
+							<a href="{% if site.active_lang == site.default_lang %}
+							{{site.baseurl}}/category/{{category_name}}
+							{% else %}
+							{{site.baseurl}}/{{ site.active_lang }}/category/{{category_name}} 
+							{% endif %}">
+							
+							{% if site.active_lang == "ja" %}					
+								{% for page in site.pages %} 
+								{% if page.name contains category_name %}
+								{{page.ja-name}}
+								{% endif %}
+								{% endfor %}
+							
+							{% else %}
+								{{category_name}}
+							{% endif %}
+							</a></li>		
+						{% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
 
-    </article>
-
-</div>
+    </div>
+</section>

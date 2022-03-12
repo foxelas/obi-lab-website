@@ -31,8 +31,8 @@
         >
       </li>
       {% endif %} {% endif %}{% endfor %} 
-	  
-	{% for page in site.pages %} {% if page.lang == site.active_lang and page.name == "news.html" %} {% if page.title
+	 
+	  {% for page in site.pages %} {% if page.lang == site.active_lang and page.name == "access.html" %} {% if page.title
       %}
       <li>
         <a class="page-link" href="{% if site.active_lang == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ site.active_lang }}{{page.url}}{% endif %}"
@@ -40,16 +40,17 @@
         >
       </li>
       {% endif %} {% endif %}{% endfor %} 
-	  	  
-	{% for page in site.pages %} {% if page.lang == site.active_lang and page.name == "access.html" %} {% if page.title
-      %}
+	  
+	 {% for page in site.pages %} {% if page.name == "news.html" %} 
       <li>
         <a class="page-link" href="{% if site.active_lang == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ site.active_lang }}{{page.url}}{% endif %}"
-         >{{ page.title }}</a
-        >
-      {% endif %} {% endif %}{% endfor %} 	  
-
-      <li>
+         >{% if site.active_lang == "ja" %} {{page.ja-name}} {% else %} {{ page.title }} {% endif %}</a
+        >  
+	   </li> 
+	  {% endif %} {% endfor %} 
+	 	  
+	   
+     <li>
 	  
 	   {% for tongue in site.languages %}
 	<a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} > {{ tongue }} </a> 

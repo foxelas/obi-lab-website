@@ -2,7 +2,7 @@
 layout: post
 title: "2021年度入学者向け大学院入試説明会"
 date: 2020-04-22
-categories: information
+category: information
 lang: ja
 ---
 

@@ -2,13 +2,14 @@
 layout: default
 title: News
 permalink: /news
+ja-name: お知らせ
 lang: en
 ---
 
 <!-- Banner -->
 <section id="banner">
   <div class="inner">
-    <h2>News</h2>
+    <h2>{{ site.news[site.active_lang] }}</h2>
   </div>
 </section>
 <section id="main" class="wrapper style1">
@@ -16,7 +17,23 @@ lang: en
   <div class="wrapper {% cycle 'style1', 'style2' %}">
     <header class="major">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <h3>{{ post.date | date: "%-d %B %Y" }}</h3>
+      <h3>{{ post.date | date: "%-d %B %Y" }} {% if post.category %} • <a href="
+							{% if site.active_lang == site.default_lang %}
+								{{site.baseurl}}/category/{{post.category}}
+							{% else %}
+								{{site.baseurl}}/{{ site.active_lang }}/category/{{post.category}} 
+							{% endif %}">
+							{% capture category_name %}{{ post.category }}{% endcapture %}
+							{% if site.active_lang == "ja" %}					
+								{% for page in site.pages %} 
+								{% if page.name contains category_name %}
+									{{page.ja-name}}
+								{% endif %}
+								{% endfor %}
+							{% else %}
+								{{category_name}}
+							{% endif %}
+							</a>{% endif %} </h3>
     </header>
     <section class="container">{{ post.excerpt }}</section>
     <section class="special">
@@ -25,7 +42,7 @@ lang: en
           <a
             href="{{ site.baseurl }}{{ post.url }}"
             class="button {% cycle '', 'alt'%}"
-            >Read More</a
+            >{{ site.readmore[site.active_lang] }}</a
           >
         </li>
       </ul>

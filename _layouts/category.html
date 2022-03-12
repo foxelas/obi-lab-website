@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% assign category = page.category-name %}
+
+<!-- Banner -->
+<section id="banner">
+  <div class="inner">
+    <h2>Topic:&nbsp;
+	{% if site.active_lang == "ja" %} {{page.ja-name}} {% else %} {{ category }} {% endif %}</h2>
+  </div>
+</section>
+<section id="main" class="wrapper style1">
+	
+  
+  {% for post in site.categories[category] %}
+
+  <div class="wrapper {% cycle 'style1', 'style2' %}">
+    <header class="major">
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h3>{{ post.date | date: "%-d %B %Y" }}</h3>
+    </header>
+    <section class="container">{{ post.excerpt }}</section>
+    <section class="special">
+      <ul class="actions">
+        <li>
+          <a
+            href="{{ site.baseurl }}{{ post.url }}"
+            class="button {% cycle '', 'alt'%}"
+            >{{ site.readmore[site.active_lang] }}</a
+          >
+        </li>
+      </ul>
+    </section>
+  </div>
+  {% endfor %}
+</section>
+
