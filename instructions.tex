@@ -1,0 +1,56 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    }
+
+\urlstyle{same}
+
+\title{Instructions for update}
+
+\begin{document}
+
+\maketitle
+
+\section{Preparation}
+\begin{itemize}
+\item Make sure the pc environment is prepared according to \url{https://foxelas.github.io/blog/jekyll/update/2021/07/24/notes-on-jekyll.html}
+\item With Github, checkout to branch 'dev'.
+\end{itemize}
+
+\section{Update}
+\begin{itemize}
+\item To update general information, modify `\_config.yml'
+\item To update the lab members, modify files: a) en$\backslash$about.html, and b) ja$\backslash$ about.html. Values for general information e.g. department name, can be recovered from `\_config.yml' as \{\{site.department[site.active\_lang]\}\}. 
+\item To add new posts, add a new file in `\_posts' with filename in format `YYYY-MM-DD-yourname.markdown'. The file should start with \\
+
+---\\
+layout: post\\
+title: "Website renewal!"\\
+date: 2022-03-10\\
+categories: general\\
+lang: en\\
+---\\
+
+and then the content follows, either as plaintext, as markdown or as html. 
+
+\item Open git bash, navigate to target folder and run \\
+\$bundle exec jekyll serve
+\item Inspect the site in \url{http://127.0.0.1:4000/obi-lab-website/}
+\item Push changes to branch `dev'.
+\end{itemize}
+
+\section{Build}
+\begin{itemize}
+\item Open git bash, navigate to target folder and run \\
+\$bundle exec jekyll serve
+\item Inspect the site in \url{http://127.0.0.1:4000/obi-lab-website/}
+\item Publish and test with github pages. Copy folder `\_site' to a different directory, checkout to branch `gh-pages' and replace its contents with the contents of `\_site' folder. Make sure the `.nojekyll' file remains intact.  Wait a bit and check the live website at \url{https://foxelas.github.com/obi-lab-website}. 
+\item Fetch the contents of folder `\_site' and publish them as the new website.
+\end{itemize}
+
+\end{document}
